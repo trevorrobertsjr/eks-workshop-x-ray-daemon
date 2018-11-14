@@ -8,12 +8,12 @@ See the [Application Tracing on Kubernetes with AWS X-Ray](https://aws.amazon.co
 
 **Command reference**
 
-Deploy the DaemonSet
+Deploy
 ```
 kubectl apply -f xray-k8s-daemonset.yaml
 ```
 
-Describe the DaemonSet
+Describe
 ```
 kubectl describe daemonset xray-daemon
 ```
@@ -23,7 +23,7 @@ Check the status of the pods
 kubectl get pods
 ```
 
-Delete the DaemonSet
+Delete
 ```
 kubectl delete daemonset xray-daemon
 ```

@@ -18,7 +18,7 @@ Describe
 kubectl describe daemonset xray-daemon
 ```
 
-Check the status of the pods
+Status of the pods
 ```
 kubectl get pods
 ```

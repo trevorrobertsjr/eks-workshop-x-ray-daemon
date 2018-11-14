@@ -1,7 +1,6 @@
-# Use Amazon Linux Version 1
 FROM amazonlinux:2
 
-# Download latest 2.x release of X-Ray daemon
+# Download latest 3.x release of X-Ray daemon
 RUN yum install -y unzip && \
     cd /tmp/ && \
     curl https://s3.dualstack.us-east-2.amazonaws.com/aws-xray-assets.us-east-2/xray-daemon/aws-xray-daemon-linux-3.x.zip > aws-xray-daemon-linux-3.x.zip && \
@@ -10,7 +9,6 @@ RUN yum install -y unzip && \
     rm aws-xray-daemon-linux-3.x.zip && \
     rm cfg.yaml
 
-# Expose port 2000 on udp
 EXPOSE 2000/udp
 
 ENTRYPOINT ["/usr/bin/xray"]

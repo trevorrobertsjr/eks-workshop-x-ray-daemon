@@ -18,9 +18,14 @@ Describe
 kubectl describe daemonset xray-daemon
 ```
 
-Status of the pods
+List the pods
 ```
-kubectl get pods
+kubectl get pod --selector app=xray-daemon
+```
+
+Get logs for pods
+```
+kubectl logs -l app=xray-daemon
 ```
 
 Delete

@@ -26,6 +26,9 @@ kubectl get pods
 Delete
 ```
 kubectl delete daemonset xray-daemon
+kubectl delete configmap xray-config
+kubectl delete service xray-service
+kubectl delete serviceaccount xray-daemon
+kubectl delete clusterrolebinding xray-daemon
 ```
-
 
